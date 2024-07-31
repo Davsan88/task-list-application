@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List Application</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script> <!-- Defer script execution until after the document has been parsed -->
+    <style>
+        /* Optional: Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #taskInput {
+            width: 300px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        #addTaskButton {
+            padding: 10px 20px;
+        }
+        #taskList {
+            list-style-type: none;
+            padding: 0;
+        }
+        .task {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
     <h1>Task List Application</h1>
+    <!-- Input field to enter new tasks and a button to add tasks -->
     <input type="text" id="taskInput" placeholder="Enter a new task">
+    <!-- Container to display the list of tasks -->
     <button id="addTaskButton">Add Task</button>
     <ul id="taskList"></ul>
 </body>
