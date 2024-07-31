@@ -7,7 +7,7 @@ function addTask() {
         const listElement = document.createElement('li'); // Create a new <li> element
         listElement.textContent = taskText; // Set the text content to the input value
         const taskList = document.getElementById('taskList');
-        taskList.append('listElement'); // Append the new task to the task list
+        taskList.appendChild('listElement'); // Append the new task to the task list
     }
      
 };
