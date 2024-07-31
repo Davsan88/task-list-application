@@ -5,6 +5,9 @@ const taskButton = document.getElementById('addTaskButton');
 
 function addTask() {
     const taskText = taskInput.value.trim(); // Get the value and trim any whitespace
+    console.log("Task Text: ", taskText); // Debugging: Log the task text
+
+
     // Check if the Input is Not Empty
     if(taskText !== '') {
          // Proceed with creating the new task
@@ -12,9 +15,13 @@ function addTask() {
         newTask.textContent = taskText; // Set the text content to the input value
         newTask.classList.add('task'); // Add the 'task' class for styling
 
-        taskList.appendChild('newTask'); // Append the new task to the task list
+        console.log("New Task:", newTask); // Debugging: Log the new task element
+
+        taskList.appendChild(newTask); // Append the new task to the task list
 
         taskInput.value = ''; // Clear the input field
     }
-     
 };
+
+// Add an event listener to the button to call addTask when clicked
+taskButton.addEventListener('click', addTask);
