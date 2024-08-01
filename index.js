@@ -23,5 +23,9 @@ function addTask() {
     }
 };
 
+
+
 // Add an event listener to the button to call addTask when clicked
 taskButton.addEventListener('click', addTask);
+
+taskList.addEventListener('click', removeTask)
