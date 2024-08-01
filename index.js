@@ -23,6 +23,10 @@ function addTask() {
     }
 };
 
+function removeTask(newTask) {
+    // Use event.target to get the clicked element
+    const clickedElement = newTask.target;
+}
 
 
 // Add an event listener to the button to call addTask when clicked
