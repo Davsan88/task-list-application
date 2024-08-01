@@ -22,8 +22,9 @@ function addTask() {
 
         taskInput.value = ''; // Clear the input field
     }
-};
+}
 
+// Function to remove a task
 function removeTask(event) {
     // Use event.target to get the clicked element
     const clickedElement = event.target;
