@@ -26,6 +26,10 @@ function addTask() {
 function removeTask(newTask) {
     // Use event.target to get the clicked element
     const clickedElement = newTask.target;
+
+    if (clickedElement.tagName == 'li') { // Check if the clicked element is an <li>
+        clickedElement.remove() // Remove the clicked task using the modern remove() method
+    }
 }
 
 
