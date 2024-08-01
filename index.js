@@ -36,4 +36,5 @@ function removeTask(newTask) {
 // Add an event listener to the button to call addTask when clicked
 taskButton.addEventListener('click', addTask);
 
-taskList.addEventListener('click', removeTask)
+// Add event listener to the task list for removing tasks
+taskList.addEventListener('click', removeTask);
