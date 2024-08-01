@@ -3,6 +3,7 @@ const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
 const taskButton = document.getElementById('addTaskButton');
 
+// Function to add a new task
 function addTask() {
     const taskText = taskInput.value.trim(); // Get the value and trim any whitespace
     console.log("Task Text: ", taskText); // Debugging: Log the task text
@@ -23,9 +24,9 @@ function addTask() {
     }
 };
 
-function removeTask(newTask) {
+function removeTask(event) {
     // Use event.target to get the clicked element
-    const clickedElement = newTask.target;
+    const clickedElement = event.target;
 
     if (clickedElement.tagName == 'LI') { // Check if the clicked element is an <li>
         clickedElement.remove() // Remove the clicked task using the modern remove() method
